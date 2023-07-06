@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+/*this is the background image*/
+.container {
+  background-image: url("hero_background_image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+/* the header section 
+the navigation bar */
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+/* selecting the id of the navigation bar */
+
+#right-nav {
+  text-align: right;
+}
+
+/*this is a selector to select the list items */
+
+.navbar li {
+  display: inline-block;
+}
+/*this is a selector to select the anchor elements*/
+
+.navbar li a {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: black;
+}
+/* .text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+} */
+
+/*this is the heading in bold letters */
+
+.heading {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 70px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 70px;
+  margin-top: auto;
+}
+/*the two buttons */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  padding-left: 70px;
+  margin-top: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+#btn-more-about-us {
+  border: 1px solid white;
+  background-color: aquamarine;
+  /* color: bla; */
+}
+#btn-see-live-demo {
+  border: 2px solid aquamarine;
+}
+
+/*this is the middle part containing 3 boxes */
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  position: relative;
+  bottom: 130px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  position: relative;
+}
+/* .box img {
+  max-height: 50x;
+  max-width: 50px;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 20px;
+  left: 50%;
+} */
+
+.box img {
+  max-height: 50px;
+  max-width: 50px;
+  margin-top: 3px;
+}
+
+.text2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.paragraph2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*partners image and 4 paragraphs and a button*/
+.partners {
+  display: flex;
+  align-items: center;
+}
+
+.partners img {
+  max-height: 70%;
+  max-width: 50%;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+/*.partners .paragraphs {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.partners .paragraphs .first-paragraph {
+  color: yellow;
+}
+.partners .paragraphs .second-paragraph {
+  font-weight: bold;
+}
+
+.partners .paragraphs .third-paragraph {
+  font-weight: lighter;
+}
+
+.partners .paragraphs .learn-more-button {
+  width: 110px;
+  height: 40px;
+  background-color: yellow;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+/*Achievement*/
+
+.achievement {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+.content {
+  flex-grow: 1; /* Allows the paragraphs to grow and fill the available space */
+}
+
+.achievement img {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: 100px; /* Adds spacing between the paragraphs and image */
+
+  /*project galler*/
+}
+.projectgallery {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 200px;
+}
+
+.projectext {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 200px;
+}
+.gallerybutton {
+  width: 150px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: orange;
+  border: #f2f2f2;
+  border-radius: 30px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  /* Adjust the maximum width of the images as desired */
+  max-width: 200px;
+  height: 300px; /* Maintain the aspect ratio of the images */
+  margin: 0 10px; /* Add horizontal spacing between the images */
+}
+/*feedback*/
+
+.feedback {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.image-left {
+  margin-right: 70px;
+  margin-top: 200px;
+  margin-left: 70px;
+}
+
+.image-left img {
+  max-width: 200px; /* Adjust the maximum width of the left image as desired */
+  height: auto; /* Maintain the aspect ratio of the left image */
+}
+
+.clientparagraphs {
+  flex: 1;
+  margin: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.clientparagraphs p.orange-text {
+  color: orange;
+}
+
+.clientparagraphs p.bold-text {
+  font-weight: bold;
+}
+.learnmore {
+  margin-top: 10px; /* Adjust the spacing between the paragraph and the button */
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: orange;
+  color: #f2f2f2;
+  border: white;
+}
+/*this is the newsletter part*/
+.newsletter_bold {
+  font-weight: bold;
+}
+.newsletter {
+  text-align: center;
+  margin-top: 100px;
+}
+.search-bar {
+  text-align: left;
+  margin-top: 10px; /* Adjust the margin value as desired */
+}
+
+.search-bar input {
+  width: 200px; /* Adjust the width of the search bar as desired */
+  height: 30px;
+}
+.contactdetails {
+  display: flex;
+  justify-content: space-between;
+}
+.contactdetails.xtreme p.xtremebold {
+  font-weight: bold;
+}
+
+.text-bold {
+  font-weight: bold;
+}
